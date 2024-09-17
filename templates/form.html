@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="attr1">Attribute 1:</label>
+                <input type="text" id="attr1" name="attr1" required>
+            </div>
+            <div class="form-group">
+                <label for="attr2">Attribute 2:</label>
+                <input type="text" id="attr2" name="attr2" required>
+            </div>
+            <div class="form-group">
+                <label for="attr3">Attribute 3:</label>
+                <input type="text" id="attr3" name="attr3" required>
+            </div>
+            <div class="form-group">
+                <label for="attr4">Attribute 4:</label>
+                <input type="text" id="attr4" name="attr4" required>
+            </div>
+            <div class="form-group">
+                <label for="attr5">Attribute 5:</label>
+                <input type="text" id="attr5" name="attr5" required>
+            </div>
+            <div class="form-group">
+                <label for="attr6">Attribute 6:</label>
+                <input type="text" id="attr6" name="attr6" required>
+            </div>
+            <div class="form-group">
+                <label for="attr7">Attribute 7:</label>
+                <input type="text" id="attr7" name="attr7" required>
+            </div>
+            <div class="form-group">
+                <label for="attr8">Attribute 8:</label>
+                <input type="text" id="attr8" name="attr8" required>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result">
+            <!-- Prediction result will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>
